@@ -63,7 +63,7 @@
             <!--로그인 여기있어요!!!-->
             <!--로그인 여기있어요!!!-->
             <!--로그인 여기있어요!!!-->
-            <div onClick="location.href='./signup.php'" style="padding-left: 80vw; padding-right: 12px; padding-top: 10px; padding-bottom: 10px; border-radius: 6px; justify-content: center; align-items: center; gap: 8px; display: flex">
+            <div onClick="location.href='./login.php'"; class='pointer'; style="padding-left: 80vw; padding-right: 12px; padding-top: 10px; padding-bottom: 10px; border-radius: 6px; justify-content: center; align-items: center; gap: 8px; display: flex">
               <div style="width: 20px; height: 20px; position: relative">
                 <div style="width: 20px; height: 20px; left: 0px; top: 0px; position: absolute; opacity: 0.10"></div>
                 <div style="width: 16px; height: 16px; left: 2px; top: 2px; position: absolute">
@@ -77,7 +77,7 @@
             <!--회원가입 여기있어요!!!-->
             <!--회원가입 여기있어요!!!-->
             <!--회원가입 여기있어요!!!-->
-            <div onClick="location.href='./signup.php'" style="padding-left: 12px; padding-right: 12px; padding-top: 10px; padding-bottom: 10px; border-radius: 6px; justify-content: center; align-items: center; gap: 8px; display: flex">
+            <div onClick="location.href='./signup.php'"; class='pointer'; style="padding-left: 12px; padding-right: 12px; padding-top: 10px; padding-bottom: 10px; border-radius: 6px; justify-content: center; align-items: center; gap: 8px; display: flex">
               <div style="width: 20px; height: 20px; position: relative">
                 <div style="width: 20px; height: 20px; left: 0px; top: 0px; position: absolute; opacity: 0.10"></div>
                 <div style="width: 18px; height: 14px; left: 1px; top: 3px; position: absolute">
@@ -147,7 +147,7 @@
   <!--여기 메인버튼 있어요!!!!-->
   <!--여기 메인버튼 있어요!!!!-->
   <!--여기 메인버튼 있어요!!!!-->
-  <div onClick="location.href='./main.php'" style="width: 172px; height: 75px; left: 2vw; top: 39px; position: absolute">
+  <div onClick="location.href='./main.php'"; class='pointer'; style="width: 172px; height: 75px; left: 2vw; top: 39px; position: absolute">
     <img style="width: 50px; height: 50px; left: 0px; top: 17px; position: absolute" src="https://via.placeholder.com/50x50" />
     <div style="left: 45px; top: 0px; position: absolute; color: #65A2FC; font-size: 50px; font-family: Notable; font-weight: 400; line-height: 75px; word-wrap: break-word">SEM</div>
   </div>

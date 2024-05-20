@@ -69,7 +69,7 @@
   <!--여기 메인버튼 있어요!!!!-->
   <!--여기 메인버튼 있어요!!!!-->
   <!--여기 메인버튼 있어요!!!!-->
-  <div onClick="location.href='./main.php'" style="width: 172px; height: 75px; left: 2vw; top: 39px; position: absolute">
+  <div onClick="location.href='./main.php'"; class='pointer'; style="width: 172px; height: 75px; left: 2vw; top: 39px; position: absolute">
     <img style="width: 50px; height: 50px; left: 0px; top: 17px; position: absolute" src="https://via.placeholder.com/50x50" />
     <div style="left: 45px; top: 0px; position: absolute; color: #65A2FC; font-size: 50px; font-family: Notable; font-weight: 400; line-height: 75px; word-wrap: break-word">SEM</div>
   </div>
@@ -101,11 +101,11 @@
             <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
             <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
             <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
-            <div onClick="javascript:move( './!!!!!!!!로그인 판단해주세요!!.php');" style="color: white; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word">로그인</div>
+            <div onClick="javascript:move( './!!!!!!!!로그인 판단해주세요!!.php');" class='pointer'; style="color: white; font-size: 19px; font-family: NanumGothic; font-weight: 400; line-height: 28.50px; word-wrap: break-word">로그인</div>
           </div>
           <div style="align-self: stretch; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
             <div style="width: 68px; padding: 2px; border-radius: 6px; justify-content: center; align-items: center; gap: 4px; display: flex">
-              <div onClick="location.href='./signup.php'" style="color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 400; line-height: 25.50px; word-wrap: break-word">회원가입</div>
+              <div onClick="location.href='./signup.php'"; class='pointer'; style="color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 400; line-height: 25.50px; word-wrap: break-word">회원가입</div>
             </div>
           </div>
         </div>

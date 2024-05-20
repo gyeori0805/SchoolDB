@@ -7,7 +7,7 @@
           <!--여기 메인버튼 있어요!!!!-->
           <!--여기 메인버튼 있어요!!!!-->
           <!--여기 메인버튼 있어요!!!!-->
-          <div onClick="location.href='./main.php'" style="width: 172px; height: 75px; position: relative">
+          <div onClick="location.href='./main.php'"; class='pointer'; style="width: 172px; height: 75px; position: relative">
             <img style="width: 50px; height: 50px; left: 0px; top: 17px; position: absolute" src="https://via.placeholder.com/50x50" />
             <div style="left: 45px; top: 0px; position: absolute; color: #65A2FC; font-size: 50px; font-family: Notable; font-weight: 400; line-height: 75px; word-wrap: break-word">SEM</div>
           </div>
@@ -102,7 +102,7 @@
             <!--여기 명단검색이동 있어요!!!!-->
             <!--여기 명단검색이동 있어요!!!!-->
             <!--여기 명단검색이동 있어요!!!!-->
-            <div onClick="location.href='./search.php'" style="padding-left:2vw; flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word">명단 검색</div>
+            <div onClick="location.href='./search.php'"; class='pointer'; style="padding-left:2vw; flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word">명단 검색</div>
             <div style="width: 20px; height: 20px; position: relative">
               <div style="width: 20px; height: 20px; left: 0px; top: 0px; position: absolute; opacity: 0.10"></div>
               <div style="width: 16px; height: 16px; left: 2px; top: 2px; position: absolute">
@@ -118,7 +118,7 @@
             <!--여기 명단추가이동 있어요!!!!-->
             <!--여기 명단추가이동 있어요!!!!-->
             <!--여기 명단추가이동 있어요!!!!-->
-            <div onClick="location.href='./insert.php'" style="padding-left:2vw; flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word">명단 추가</div>
+            <div onClick="location.href='./insert.php'"; class='pointer'; style="padding-left:2vw; flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word">명단 추가</div>
             <div style="width: 20px; height: 20px; position: relative">
               <div style="width: 20px; height: 20px; left: 0px; top: 0px; position: absolute; opacity: 0.10"></div>
               <div style="width: 16px; height: 16px; left: 2px; top: 2px; position: absolute">
@@ -134,7 +134,7 @@
             <!--여기 명단추가이동 있어요!!!!-->
             <!--여기 명단추가이동 있어요!!!!-->
             <!--여기 명단추가이동 있어요!!!!-->
-            <div onClick="location.href='./delete.php'" style="padding-left:2vw; flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word">명단 삭제</div>
+            <div onClick="location.href='./delete.php'"; class='pointer'; style="padding-left:2vw; flex: 1 1 0; color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 700; line-height: 25.50px; word-wrap: break-word">명단 삭제</div>
             <div style="width: 20px; height: 20px; position: relative">
               <div style="width: 20px; height: 20px; left: 0px; top: 0px; position: absolute; opacity: 0.10"></div>
               <div style="width: 16px; height: 16px; left: 2px; top: 2px; position: absolute">
@@ -248,7 +248,7 @@
       <!--여기 추가하기버튼 있어요!!!!-->
       <!--여기 추가하기버튼 있어요!!!!-->
       <!--여기 추가하기버튼 있어요!!!!-->
-      <div onClick="location.href='./insert.php'" style="text-align: center; color: white; font-size: 15px; font-family: NanumGothic; font-weight: 700; line-height: 22.50px; word-wrap: break-word">추가하기</div>
+      <div onClick="location.href='./insert.php'"; class='pointer'; style="text-align: center; color: white; font-size: 15px; font-family: NanumGothic; font-weight: 700; line-height: 22.50px; word-wrap: break-word">추가하기</div>
     </div>
   </div>
 </div>
