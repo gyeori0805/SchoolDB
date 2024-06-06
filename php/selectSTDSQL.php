@@ -40,8 +40,8 @@
 		echo '<td style="font-size:25">$a6</td>';
 		echo '<td style="font-size:25">$a7</td>';
 		echo '</tr>';
-		echo '</table>';
 	}
+	echo '</table>';
 
 	// MySQL 드라이버 연결 해제
 	mysqli_free_result( $resultSet );
