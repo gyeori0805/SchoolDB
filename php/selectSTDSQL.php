@@ -1,18 +1,54 @@
 <?php header('Content-Type: text/html; charset=UTF-8'); ?>
 <?php 
-	echo "
-	<html>
-		<table border="1" bordercolor="skyblue" align = "center" >
-			<tr align = "center" bgcolor="skybule">
-				<td style="font-size:30">학년</td>
-				<td style="font-size:30">학번</td>
-				<td style="font-size:30">이름</td>
-				<td style="font-size:30">생년월일</td>
-				<td style="font-size:30">성별</td>
-				<td style="font-size:30">학적</td>
-				<td style="font-size:30">전화번호</td>
-			</tr>
-		</table>
-	</html>
-	";
+	// 이전 페이지에서 전달 받은 메시지 확인
+	$message =  $_POST['message'];
+	$message = ( ( ( $message == null ) || ( $message == "" ) || ( strncmp( $message, " * ", 3 ) == 0 ) ) ? "_%" : $message );
+
+	// MySQL 드라이버 연결 
+	include("./SQLconstants.php");
+	$conn = mysqli_connect($mySQL_host,$mySQL_id,$mySQL_password,$mySQL_database) or die ("Can't access DB");
+
+	echo "<html>";
+	echo "<table border="1" bordercolor="skyblue" align = "center" >";
+	echo "<tr align = "center" bgcolor="skybule">";
+	echo "<td style="font-size:30">학년</td>";
+	echo "<td style="font-size:30">학번</td>";
+	echo "<td style="font-size:30">이름</td>";
+	echo "<td style="font-size:30">생년월일</td>";
+	echo "<td style="font-size:30">성별</td>";
+	echo "<td style="font-size:30">학적</td>";
+	echo "<td style="font-size:30">전화번호</td>";
+	echo "</tr>";
+	echo "</table>";
+	echo "</html>";
+
+	// MySQL 책 검색 실행 및 결과 출력
+	$query = "select * from student where name like '%".$message."%';";
+	$resultSet = mysqli_query( $conn, $query );
+	while( $result = mysqli_fetch_array( $resultSet ) )
+	{
+		echo "<html>";
+		echo "<table border="1" bordercolor="skyblue" align = "center" >";
+		echo "<tr align = "center">";
+		echo "<td style="font-size:25"> .$result['grade']; </td>";
+		echo "<td style="font-size:25"> .$result['studentid']; </td>";
+		echo "<td style="font-size:25"> .$result['name']; </td>";
+		echo "<td style="font-size:25"> .$result['birth']; </td>";
+		echo "<td style="font-size:25"> .$result['gender']; </td>";
+		echo "<td style="font-size:25"> .$result['studentrecord']; </td>";
+		echo "<td style="font-size:25"> .$result['phonenumber']; </td>";
+		echo "</tr>";
+		echo "</table>";
+		echo </html>";
+	}
+
+	// MySQL 드라이버 연결 해제
+	mysqli_free_result( $resultSet );
+	mysqli_close( $conn );
+?>
+
+<?php 
+	// 로그 데이터 추출
+	include("./log.php");
+	writeLog( $message." 학생을 찾았습니다" );
 ?>
