@@ -20,8 +20,6 @@
 	<td style="font-size:30">학적</td>
 	<td style="font-size:30">전화번호</td>
 	</tr>
-	</table>
-	</html>
  	';
 
 	// MySQL 책 검색 실행 및 결과 출력
@@ -30,7 +28,6 @@
 	while( $result = mysqli_fetch_array( $resultSet ) )
 	{
 		echo '
-		<table border="1" bordercolor="skyblue" align = "center" >
 		<tr align = "center">
 		<td style="font-size:25">1</td>
 		<td style="font-size:25">2</td>
