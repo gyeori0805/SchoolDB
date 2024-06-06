@@ -8,19 +8,16 @@
 	include("./SQLconstants.php");
 	$conn = mysqli_connect($mySQL_host,$mySQL_id,$mySQL_password,$mySQL_database) or die ("Can't access DB");
 
-	echo '
-	<table border="1" bordercolor="skyblue" align = "center">
-	<tr align = "center" bgcolor="skybule">
-	<td style="font-size:30">학년</td>
-	<td style="font-size:30">학번</td>
- 	<td style="font-size:30">이름</td>
-	<td style="font-size:30">생년월일</td>
-	<td style="font-size:30">성별</td>
-	<td style="font-size:30">학적</td>
-	<td style="font-size:30">전화번호</td>
-	</tr>
- 	</table>
- 	';
+	echo '<table border="1" bordercolor="skyblue" align = "center">';
+	echo '<tr align = "center" bgcolor="skybule">';
+	echo '<td style="font-size:30">학년</td>';
+	echo '<td style="font-size:30">학번</td>';
+ 	echo '<td style="font-size:30">이름</td>';
+	echo '<td style="font-size:30">생년월일</td>';
+	echo '<td style="font-size:30">성별</td>';
+	echo '<td style="font-size:30">학적</td>';
+	echo '<td style="font-size:30">전화번호</td>';
+	echo '</tr>';
 
 	// MySQL 책 검색 실행 및 결과 출력
 	$query = "select * from student where name like '%".$message."%';";
@@ -34,19 +31,16 @@
 		$a5 = "123";
 		$a6 = "123";
 		$a7 = "123";
-		echo '
-  		<table border="1" bordercolor="skyblue" align = "center">
-		<tr align = "center">
-		<td style="font-size:25">$a1</td>
-		<td style="font-size:25">$a2</td>
-		<td style="font-size:25">$a3</td>
-		<td style="font-size:25">$a4</td>
-		<td style="font-size:25">$a5</td>
-		<td style="font-size:25">$a6</td>
-		<td style="font-size:25">$a7</td>
-		</tr>
-		</table>
-  		';
+		echo '<tr align = "center">';
+		echo '<td style="font-size:25">$a1</td>';
+		echo '<td style="font-size:25">$a2</td>';
+		echo '<td style="font-size:25">$a3</td>';
+		echo '<td style="font-size:25">$a4</td>';
+		echo '<td style="font-size:25">$a5</td>';
+		echo '<td style="font-size:25">$a6</td>';
+		echo '<td style="font-size:25">$a7</td>';
+		echo '</tr>';
+		echo '</table>';
 	}
 
 	// MySQL 드라이버 연결 해제
