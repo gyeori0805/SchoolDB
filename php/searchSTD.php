@@ -226,9 +226,9 @@
           </div>
         </div>
       </div>
-      <div style="text-align: center"><?php include("./selectSTDSQL.php"); ?></div>
     </div>
   </div>
+  <div style="text-align: center"><?php include("./selectSTDSQL.php"); ?></div>
   <!--여기까지 기능-->
 
   <!--푸터-->
