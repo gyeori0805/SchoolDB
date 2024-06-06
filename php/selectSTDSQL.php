@@ -2,7 +2,7 @@
 <?php 
 	echo '
  	<html>
-	<table class="html-table" border="1" bordercolor="skyblue" align = "center">
+	<table border="1" bordercolor="skyblue" align = "center">
 	<tr align = "center" bgcolor="skybule">
 	<td>학년</td>
 	<td>학번</td>
