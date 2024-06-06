@@ -29,13 +29,13 @@
 	$resultSet = mysqli_query( $conn, $query );
 	while( $result = mysqli_fetch_array( $resultSet ) )
 	{
-		echo "\n학년 : ".$result['grade'];
-		echo "\n<BR>학번 : ".$result['studentid'];
-		echo "\n<BR>이름 : ".$result['name'];
-		echo "\n<BR>생년월일 : ".$result['birth'];
-		echo "\n<BR>성별 : ".$result['gender'];
-		echo "\n<BR>학적 : ".$result['studentrecord'];
-		echo "\n<BR>전화번호 : ".$result['phonenumber'];
+		echo .$result['grade'];
+		echo .$result['studentid'];
+		echo .$result['name'];
+		echo .$result['birth'];
+		echo .$result['gender'];
+		echo .$result['studentrecord'];
+		echo .$result['phonenumber'];
 		echo "\n<BR><BR>";
 	}
 
