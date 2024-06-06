@@ -35,7 +35,7 @@
 		$a6 = $result['studentrecord'];
 		$a7 = $result['phonenumber'];
 		echo '
-  		<table>
+  		<table border="1" bordercolor="skyblue" align = "center">
 		<tr align = "center">
 		<td style="font-size:25">$a1</td>
 		<td style="font-size:25">$a2</td>
