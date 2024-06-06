@@ -32,13 +32,13 @@
 		$a6 = "123";
 		$a7 = "123";
 		echo '<tr align = "center">';
-		echo '<td style="font-size:25">$a1</td>';
-		echo '<td style="font-size:25">$a2</td>';
-		echo '<td style="font-size:25">$a3</td>';
-		echo '<td style="font-size:25">$a4</td>';
-		echo '<td style="font-size:25">$a5</td>';
-		echo '<td style="font-size:25">$a6</td>';
-		echo '<td style="font-size:25">$a7</td>';
+		echo "<td style="font-size:25">$a1</td>";
+		echo "<td style="font-size:25">$a2</td>";
+		echo "<td style="font-size:25">$a3</td>";
+		echo "<td style="font-size:25">$a4</td>";
+		echo "<td style="font-size:25">$a5</td>";
+		echo "<td style="font-size:25">$a6</td>";
+		echo "<td style="font-size:25">$a7</td>";
 		echo '</tr>';
 	}
 	echo '</table>';
