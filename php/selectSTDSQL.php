@@ -9,7 +9,6 @@
 	$conn = mysqli_connect($mySQL_host,$mySQL_id,$mySQL_password,$mySQL_database) or die ("Can't access DB");
 
 	echo '
- 	<html>
 	<table border="1" bordercolor="skyblue" align = "center">
 	<tr align = "center" bgcolor="skybule">
 	<td style="font-size:30">학년</td>
@@ -20,6 +19,7 @@
 	<td style="font-size:30">학적</td>
 	<td style="font-size:30">전화번호</td>
 	</tr>
+ 	</table>
  	';
 
 	// MySQL 책 검색 실행 및 결과 출력
@@ -27,18 +27,25 @@
 	$resultSet = mysqli_query( $conn, $query );
 	while( $result = mysqli_fetch_array( $resultSet ) )
 	{
+		$a1 = $result['grade'];
+		$a2 = $result['studentid'];
+		$a3 = $result['name'];
+		$a4 = $result['birth'];
+		$a5 = $result['gender'];
+		$a6 = $result['studentrecord'];
+		$a7 = $result['phonenumber'];
 		echo '
+  		<table>
 		<tr align = "center">
-		<td style="font-size:25">1</td>
-		<td style="font-size:25">2</td>
-		<td style="font-size:25">3</td>
-		<td style="font-size:25">4</td>
-		<td style="font-size:25">5</td>
-		<td style="font-size:25">6</td>
-		<td style="font-size:25">7</td>
+		<td style="font-size:25">$a1</td>
+		<td style="font-size:25">$a2</td>
+		<td style="font-size:25">$a3</td>
+		<td style="font-size:25">$a4</td>
+		<td style="font-size:25">$a5</td>
+		<td style="font-size:25">$a6</td>
+		<td style="font-size:25">$a7</td>
 		</tr>
 		</table>
-		</html>
   		';
 	}
 
