@@ -26,7 +26,19 @@
 	$resultSet = mysqli_query( $conn, $query );
 	while( $result = mysqli_fetch_array( $resultSet ) )
 	{
-
+		<html>
+			<table border="1" bordercolor="skyblue" align = "center" >
+				<tr align = "center">
+					<td style="font-size:25"> .$result['grade']; </td>
+					<td style="font-size:25"> .$result['studentid']; </td>
+					<td style="font-size:25"> .$result['name']; </td>
+					<td style="font-size:25"> .$result['birth']; </td>
+					<td style="font-size:25"> .$result['gender']; </td>
+					<td style="font-size:25"> .$result['studentrecord']; </td>
+					<td style="font-size:25"> .$result['phonenumber']; </td>
+				</tr>
+			</table>
+		</html>
 	}
 
 	// MySQL 드라이버 연결 해제
