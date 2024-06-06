@@ -24,21 +24,14 @@
 	$resultSet = mysqli_query( $conn, $query );
 	while( $result = mysqli_fetch_array( $resultSet ) )
 	{
-		$a1 = "123";
-		$a2 = "123";
-		$a3 = "123";
-		$a4 = "123";
-		$a5 = "123";
-		$a6 = "123";
-		$a7 = "123";
 		echo '<tr align = "center">';
-		echo '<td style="font-size:25">'; echo $a1; echo '</td>';
-		echo '<td style="font-size:25">'; echo $a2; echo '</td>';
-		echo '<td style="font-size:25">'; echo $a3; echo '</td>';
-		echo '<td style="font-size:25">'; echo $a4; echo '</td>';
-		echo '<td style="font-size:25">'; echo $a5; echo '</td>';
-		echo '<td style="font-size:25">'; echo $a6; echo '</td>';
-		echo '<td style="font-size:25">'; echo $a7; echo '</td>';
+		echo '<td style="font-size:25">'; echo $result['grade']; echo '</td>';
+		echo '<td style="font-size:25">'; echo $result['studentid']; echo '</td>';
+		echo '<td style="font-size:25">'; echo $result['name']; echo '</td>';
+		echo '<td style="font-size:25">'; echo $result['birth']; echo '</td>';
+		echo '<td style="font-size:25">'; echo $result['gender']; echo '</td>';
+		echo '<td style="font-size:25">'; echo $result['studentrecord']; echo '</td>';
+		echo '<td style="font-size:25">'; echo $result['phonenumber']; echo '</td>';
 		echo '</tr>';
 	}
 	echo '</table>';
