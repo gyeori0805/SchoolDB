@@ -223,9 +223,9 @@
               <div style="width: 27px; height: 27px; left: 0px; top: 0px; position: absolute; border-radius: 40px; border: 2px #2D2D2D solid"></div>
               <div style="width: 11.43px; height: 2px; left: 23.41px; top: 22px; position: absolute; transform: rotate(45deg); transform-origin: 0 0; background: #2D2D2D"></div>
             </div>
-            <div style="text-align: center"><?php include("./selectSTDSQL.php"); ?></div>
           </div>
         </div>
+        <div style="text-align: center"><?php include("./selectSTDSQL.php"); ?></div>
       </div>
     </div>
   </div>
