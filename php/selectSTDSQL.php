@@ -25,13 +25,13 @@
 	while( $result = mysqli_fetch_array( $resultSet ) )
 	{
 		echo '<tr align = "center">';
-		echo '<td style="font-size:25">'; echo "!".$result['grade']."!"; echo '</td>';
-		echo '<td style="font-size:25">'; echo "!".$result['studentid']."!"; echo '</td>';
-		echo '<td style="font-size:25">'; echo "!".$result['name']."!"; echo '</td>';
-		echo '<td style="font-size:25">'; echo "!".$result['birth']."!"; echo '</td>';
-		echo '<td style="font-size:25">'; echo "!".$result['gender']."!"; echo '</td>';
-		echo '<td style="font-size:25">'; echo "!".$result['studentrecord']."!"; echo '</td>';
-		echo '<td style="font-size:25">'; echo "!".$result['phonenumber']."!"; echo '</td>';
+		echo '<td style="font-size:25">'; echo "　".$result['grade']."　"; echo '</td>';
+		echo '<td style="font-size:25">'; echo "　".$result['studentid']."　"; echo '</td>';
+		echo '<td style="font-size:25">'; echo "　".$result['name']."　"; echo '</td>';
+		echo '<td style="font-size:25">'; echo "　".$result['birth']."　"; echo '</td>';
+		echo '<td style="font-size:25">'; echo "　".$result['gender']."　"; echo '</td>';
+		echo '<td style="font-size:25">'; echo "　".$result['studentrecord']."　"; echo '</td>';
+		echo '<td style="font-size:25">'; echo "　".$result['phonenumber']."　"; echo '</td>';
 		echo '</tr>';
 	}
 	echo '</table>';
