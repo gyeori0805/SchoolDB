@@ -2,8 +2,8 @@
 <?php 
 	echo "
  	<html>
-	<table>
-	<tr>
+	<table border="1" bordercolor="skyblue" align = "center">
+	<tr align = "center" bgcolor="skybule">
 	<td>학년</td>
 	<td>학번</td>
 	</tr>
