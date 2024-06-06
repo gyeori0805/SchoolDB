@@ -1,6 +1,6 @@
 <?php header('Content-Type: text/html; charset=UTF-8'); ?>
 <?php 
-	echo "
+	echo '
  	<html>
 	<table class="html-table" border="1" bordercolor="skyblue" align = "center">
 	<tr align = "center" bgcolor="skybule">
@@ -9,5 +9,5 @@
 	</tr>
 	</table>
 	</html>
- 	";
+ 	';
 ?>
