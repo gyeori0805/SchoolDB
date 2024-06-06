@@ -29,14 +29,13 @@
 	$resultSet = mysqli_query( $conn, $query );
 	while( $result = mysqli_fetch_array( $resultSet ) )
 	{
-		echo .$result['grade'];
-		echo .$result['studentid'];
-		echo .$result['name'];
-		echo .$result['birth'];
-		echo .$result['gender'];
-		echo .$result['studentrecord'];
-		echo .$result['phonenumber'];
-		echo "\n<BR><BR>";
+		echo $result['grade'];
+		echo $result['studentid'];
+		echo $result['name'];
+		echo $result['birth'];
+		echo $result['gender'];
+		echo $result['studentrecord'];
+		echo $result['phonenumber'];
 	}
 
 	// MySQL 드라이버 연결 해제
