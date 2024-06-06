@@ -32,13 +32,13 @@
 		echo '
 		<table border="1" bordercolor="skyblue" align = "center" >
 		<tr align = "center">
-		<td style="font-size:25">.$result['grade'].</td>
-		<td style="font-size:25">.$result['studentid'].</td>
-		<td style="font-size:25">.$result['name'].</td>
-		<td style="font-size:25">.$result['birth'].</td>
-		<td style="font-size:25">.$result['gender'].</td>
-		<td style="font-size:25">.$result['studentrecord'].</td>
-		<td style="font-size:25">.$result['phonenumber'].</td>
+		<td style="font-size:25">1</td>
+		<td style="font-size:25">2</td>
+		<td style="font-size:25">3</td>
+		<td style="font-size:25">4</td>
+		<td style="font-size:25">5</td>
+		<td style="font-size:25">6</td>
+		<td style="font-size:25">7</td>
 		</tr>
 		</table>
 		</html>
