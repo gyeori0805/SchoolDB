@@ -8,7 +8,6 @@
 	include("./SQLconstants.php");
 	$conn = mysqli_connect($mySQL_host,$mySQL_id,$mySQL_password,$mySQL_database) or die ("Can't access DB");
 
-	echo "<html>";
 	echo "<table border="1" bordercolor="skyblue" align = "center" >";
 	echo "<tr align = "center" bgcolor="skybule">";
 	echo "<td style="font-size:30">학년</td>";
@@ -20,14 +19,12 @@
 	echo "<td style="font-size:30">전화번호</td>";
 	echo "</tr>";
 	echo "</table>";
-	echo "</html>";
 
 	// MySQL 책 검색 실행 및 결과 출력
 	$query = "select * from student where name like '%".$message."%';";
 	$resultSet = mysqli_query( $conn, $query );
 	while( $result = mysqli_fetch_array( $resultSet ) )
 	{
-		echo "<html>";
 		echo "<table border="1" bordercolor="skyblue" align = "center" >";
 		echo "<tr align = "center">";
 		echo "<td style="font-size:25"> .$result['grade']; </td>";
@@ -39,7 +36,6 @@
 		echo "<td style="font-size:25"> .$result['phonenumber']; </td>";
 		echo "</tr>";
 		echo "</table>";
-		echo </html>";
 	}
 
 	// MySQL 드라이버 연결 해제
