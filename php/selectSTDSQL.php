@@ -27,13 +27,13 @@
 	$resultSet = mysqli_query( $conn, $query );
 	while( $result = mysqli_fetch_array( $resultSet ) )
 	{
-		$a1 = $result['grade'];
-		$a2 = $result['studentid'];
-		$a3 = $result['name'];
-		$a4 = $result['birth'];
-		$a5 = $result['gender'];
-		$a6 = $result['studentrecord'];
-		$a7 = $result['phonenumber'];
+		$a1 = "123";
+		$a2 = "123";
+		$a3 = "123";
+		$a4 = "123";
+		$a5 = "123";
+		$a6 = "123";
+		$a7 = "123";
 		echo '
   		<table border="1" bordercolor="skyblue" align = "center">
 		<tr align = "center">
