@@ -147,6 +147,8 @@ header('Content-Type: text/html; charset=UTF-8'); ?>
         <div style="color: #1D1D1D; font-size: 19px; font-family: NanumGothic; font-weight: 700; line-height: 28.50px; word-wrap: break-word; text-align: center;">SEM 사용자 로그인</div>
         <div style="color: #1D1D1D; font-size: 40px; font-family: NanumGothic; font-weight: 700; line-height: 60px; letter-spacing: 1px; word-wrap: break-word">아이디/비밀번호 로그인</div>
       </div>
+
+      <!-- form을 통해서 loginSQL.php파일을 실행 -->
 <form name="formm" method="post">
       <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: flex">
         <div style="width: 700px; padding: 40px; border-top: 1px #D8D8D8 solid; border-bottom: 1px #D8D8D8 solid; justify-content: center; align-items: flex-start; gap: 40px; display: inline-flex">
@@ -164,6 +166,8 @@ header('Content-Type: text/html; charset=UTF-8'); ?>
               </div>
             </div>
 </form>
+
+            <!-- 다음 파일로 정보를 전달. -->
             <div onClick="document.formm.action='./loginSQL.php'; document.formm.submit();" style="align-self: stretch; height: 56px; padding-left: 20px; padding-right: 20px; background: #246BEB; border-radius: 8px; justify-content: center; align-items: center; gap: 4px; display: inline-flex; cursor:hand">
               <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
               <!--여기 로그인 버튼 있어요!!!!!!!!!!-->
@@ -174,7 +178,8 @@ header('Content-Type: text/html; charset=UTF-8'); ?>
             </div>
             <div style="align-self: stretch; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
               <div style="width: 68px; padding: 2px; border-radius: 6px; justify-content: center; align-items: center; gap: 4px; display: flex">
-                <div onClick="location.href='./join.php'" style="color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 400; line-height: 25.50px; word-wrap: break-word; cursor:hand">회원가입</div>
+              <!-- onClick으로 join.php파일로 이동 -->  
+              <div onClick="location.href='./join.php'" style="color: #1D1D1D; font-size: 17px; font-family: NanumGothic; font-weight: 400; line-height: 25.50px; word-wrap: break-word; cursor:hand">회원가입</div>
               </div>
             </div>
           </div>

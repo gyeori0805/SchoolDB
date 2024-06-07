@@ -145,6 +145,9 @@
         <div style="color: #1D1D1D; font-size: 19px; font-family: NanumGothic; font-weight: 700; line-height: 28.50px; word-wrap: break-word; text-align: center;">SEM 회원가입</div>
         <div style="color: #1D1D1D; font-size: 40px; font-family: NanumGothic; font-weight: 700; line-height: 60px; letter-spacing: 1px; word-wrap: break-word">아이디/비밀번호 설정</div>
       </div>
+
+
+      <!-- form을 통해서 joinSQL.php파일을 실행 -->
 <form name = "formm" method = "post" action = "./joinSQL.php">
       <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 40px; display: flex">
         <div style="width: 700px; padding: 40px; border-top: 1px #D8D8D8 solid; border-bottom: 1px #D8D8D8 solid; justify-content: center; align-items: flex-start; gap: 40px; display: inline-flex">
@@ -172,9 +175,13 @@
             </div>
 </form>
 
-
+            <!-- onClick을 통해 정보를 다음 파일로 이동. -->
             <div onClick="javascript:document.formm.submit();" style="align-self: stretch; height: 56px; padding-left: 20px; padding-right: 20px; background: #246BEB; border-radius: 8px; justify-content: center; align-items: center; gap: 4px; display: inline-flex; cursor:hand">
-              <!--여기 회원가입 버튼 있어요!!!!!!!!!!-->
+             
+            
+            
+            
+            <!--여기 회원가입 버튼 있어요!!!!!!!!!!-->
               <!--여기 회원가입 버튼 있어요!!!!!!!!!!-->
               <!--여기 회원가입 버튼 있어요!!!!!!!!!!-->
               <!--여기 회원가입 버튼 있어요!!!!!!!!!!-->
