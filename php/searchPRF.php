@@ -208,6 +208,7 @@
         <div style="height: 19px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 40px; display: flex">
           <div style="align-self: stretch; text-align: center; color: #1D1D1D; font-size: 25px; font-family: NanumGothic; font-weight: 700; line-height: 37.50px; word-wrap: break-word">교수명을 입력하면 해당 교수 정보가 출력됩니다.</div>
         </div>
+<!--form 태그로 입력받은 후 selectSQL로 넘기기-->
 <form name = "formm" method = "post">
         <div style="width: 685px; padding-left: 24px; padding-right: 24px;  background: white; border-radius: 12px; border: 2px #246BEB solid; justify-content: center; align-items: center; gap: 48px; display: inline-flex">
           <div style="flex: 1 1 0; color: #1D1D1D; font-size: 24px; font-family: Noto Sans KR; font-weight: 700; line-height: 36px; word-wrap: break-word"><input type="text" name="message" placeholder="홍길동" style="font-size: 24px; width: 600px; height:80px; border: 1px solid white; outline: none; outline: none; background-color: transparent; value="";"></div>
