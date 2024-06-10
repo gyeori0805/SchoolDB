@@ -8,6 +8,7 @@
 	include("./SQLconstants.php");
 	$conn = mysqli_connect($mySQL_host,$mySQL_id,$mySQL_password,$mySQL_database) or die ("Can't access DB");
 
+	// html 테이블 구현
 	echo '<table border="1" bordercolor="skyblue" align = "center">';
 	echo '<tr align = "center" bgcolor="skybule">';
 	echo '<td style="font-size:30">⠀담당자번호⠀</td>';
@@ -17,7 +18,7 @@
 	echo '<td style="font-size:30">⠀담당자명⠀</td>';
 	echo '</tr>';
 
-	// MySQL 책 검색 실행 및 결과 출력
+	// MySQL 검색 실행 및 결과 출력
 	$query = "select * from major_list where major_manager like '%".$message."%';";
 	$resultSet = mysqli_query( $conn, $query );
 	while( $result = mysqli_fetch_array( $resultSet ) )
