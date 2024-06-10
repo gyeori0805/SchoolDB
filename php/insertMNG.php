@@ -209,6 +209,7 @@
         <div style="height: 19px; width: 730px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 40px; display: flex">
           <div style="align-self: stretch; text-align: center; color: #1D1D1D; font-size: 25px; font-family: NanumGothic; font-weight: 700; line-height: 37.50px; word-wrap: break-word">담당자정보 입력 후 추가버튼을 누르면 명단에 추가됩니다.</div>
         </div>
+<!--form 태그로 입력받은 후 insertSQL로 넘기기-->
 <form name = "formm" method = "post" action = "./insertMNGSQL.php">
         <div style="align-self: stretch; height: 360px; flex-direction: column; justify-content: center; align-items: center; padding-top: 11.4vh; gap: 24px; display: flex">
     <div style="align-self: stretch; padding-left: 16px; padding-right: 16px; border-radius: 12px; border: 2px #246BEB solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
