@@ -204,6 +204,7 @@
       <div style="align-self: stretch; height: 30px; padding-left: 20vw; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 80px; display: flex">
         <div style="color: #1D1D1D; font-size: 40px; font-family: NanumGothic; font-weight: 700; line-height: 60px; letter-spacing: 1px; word-wrap: break-word">명단 삭제</div>
       </div>
+<!--form 태그로 입력받은 후 deleteSQL로 넘기기-->
 <form name = "formm" method = "post" action = "./deleteMNGSQL.php">
       <div style="width: 769px; height: 310px; padding-top: 31px; padding-bottom: 40px; flex-direction: column; justify-content: flex-start; align-items: center; gap: 40px; display: flex">
         <div style="height: 19px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 40px; display: flex">
