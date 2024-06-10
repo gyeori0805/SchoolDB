@@ -12,7 +12,7 @@
 	include("./SQLconstants.php");
 	$conn = mysqli_connect( $mySQL_host, $mySQL_id, $mySQL_password, $mySQL_database ) or die( "Can't access DB" );
 
-	// MySQL 책 추가 실행 	
+	// MySQL 추가 실행 	
 	$query = "INSERT INTO prof( prof_id, prof_name, prof_lab, prof_phonenumber, major ) VALUES ( '".$prof_id."', '".$prof_name."', '".$prof_lab."', '".$prof_phonenumber."', '".$major."');"; 
 	$result = mysqli_query( $conn, $query );
 	if( $result ) 
@@ -23,8 +23,9 @@
 	{
 		$message = "명단에 추가할 수 없습니다."; 
 	} 
-
+	// MySQL 드라이버 연결 해제
 	mysqli_close( $conn );
+	// 메시지 창에 메시지 출력
 	echo "<script>alert(\"$message\");</script>";
 ?>
 
@@ -34,7 +35,7 @@
 	writeLog( $message );
 ?>
 
-<!-- 다음 페이지로 메시지 전달 -->
+<!-- search 페이지로 복귀 -->
 <form name = "frm" method = "post" action = "./searchPRF.php" >
 	<input type = 'hidden' name = 'message' value = ' * <?php echo $message;?>' >
 </form>
