@@ -35,7 +35,7 @@
 	writeLog( $message );
 ?>
 
-<!-- delete 페이지로 복귀 -->
+<!-- search 페이지로 복귀 -->
 <form name = "frm" method = "post" action = "./searchSTD.php" >
 	<input type = 'hidden' name = 'message' value = ' * <?php echo str_replace("'", "", $message);?>' >
 </form>
