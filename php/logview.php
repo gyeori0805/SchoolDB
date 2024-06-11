@@ -1,7 +1,7 @@
 <?php header('Content-Type: text/html; charset=UTF-8'); ?>
 <?php 
-        	$fileName = "/home/project/SchoolDB/php/log.txt";
-        	if(file_exists($fileName))
+        $fileName = "/home/project/SchoolDB/php/log.txt";
+        if(file_exists($fileName))
 	{
 		//파일 열기 
 		$fp = fopen($fileName, 'r');
